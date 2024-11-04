@@ -1,0 +1,161 @@
+/* display background color black on navbar scroll */
+.navbarScroll.navbarDark {
+    background-color: black;
+}
+.navbar {
+    /* Default styles for the navbar */
+    background-color: transparent;
+    color: #000;
+    transition: background-color 0.25s ease-in-out; /* Add transition effect */
+  }
+  
+  .navbar.colored {
+    /* Styles for the colored navbar */
+    background-color: #5f5757;
+    color: #fff;
+  }
+  
+  .navbar-nav .nav-link {
+    /* Default styles for navigation links */
+    color: #000;
+  }
+  
+  .navbar-nav .nav-link.active {
+    /* Styles for active navigation links */
+    font-weight: bold;
+  }
+/* hero background image */
+/* hero background image */
+.bgimage {
+    height: 100vh;
+    background: url('images/city-8450817.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden; /* Prevents hero-text from moving outside bgimage */
+}
+
+/* text css above hero image*/
+.hero_title {
+    font-size: 4.5rem;
+}
+.hero_desc {
+    font-size: 2rem;
+}
+/* CSS for smooth transition */
+/* CSS for smooth transition and centered positioning */
+.hero-text {
+    text-align: center;
+    position: absolute; /* Set to absolute to stay within the bgimage section */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers it in the bgimage */
+    color: white;
+    transition: transform 0.2s ease-out; /* Smooth transition */
+    pointer-events: none;
+}
+
+#about, #journey {
+    margin-top: 4rem;
+    padding-top: 4rem;
+}
+#services, #skills, #contact {
+    margin-top: 6rem;
+    padding-top: 6rem;
+}
+.pemisah{
+    margin-top: 4rem;
+    padding-top: 4rem;
+}
+#contact {
+    padding-bottom: 4rem;
+}
+/* about section image css */
+.imageAboutPage {
+    width: 100%;
+}
+
+/* services section css */
+.servicesText.card {
+    height: 280px;
+    cursor: pointer;
+  }
+.servicesIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+.card-title {
+    text-align: center;
+}
+.card:hover .servicesIcon {
+    color: #008000;
+}
+.servicesText:hover {
+    border: 1px solid #008000;
+}
+
+/* social media icons styling */
+.social-icons {
+    font-size: 36px;
+    cursor: pointer;
+}
+.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-tiktok:hover {
+    color: #008000;
+}
+.fab {
+    color: #000000;
+}
+
+/* footer styling */
+#footer {
+    background-color: #5f5757;  /* Adjust the background color as needed */
+    color: #000000;  /* Adjust the text color to contrast the background */
+    padding: 20px 0;
+}
+.social-icons a {
+    font-size: 30px;
+    margin: 0 10px;  /* Adjust spacing between icons */
+    color: #808080;  /* Inherit text color from #footer */
+}
+.copyright{
+    color: #000000;
+    text-align: center;
+}
+/* Fade In Effect */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Fade In Active State */
+.fade-in.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Fade Out Effect */
+.fade-out {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Fade Out Active State */
+.fade-out.active {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+/* Initial hidden state for sections */
+.section {
+    opacity: 0;
+    transform: translateY(50px); /* Move down */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
+}
+
+/* Class to show sections */
+.section.visible {
+    opacity: 1;
+    transform: translateY(0); /* Move to original position */
+}
