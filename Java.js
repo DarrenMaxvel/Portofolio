@@ -4,7 +4,7 @@ window.addEventListener('scroll', function() {
   var firstSection = document.querySelector('#home');
 
   // Calculate the transition position (halfway through the first section)
-  var transitionPosition = firstSection.offsetTop + (firstSection.offsetHeight / 4.5);
+  var transitionPosition = firstSection.offsetTop + (firstSection.offsetHeight / 8);
   
   var scrollPosition = window.scrollY;
 
