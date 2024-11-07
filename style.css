@@ -160,7 +160,7 @@ body{
     margin-bottom: 4rem; /* Space below the section */
     opacity: 0;
     transform: translateY(50px); /* Move down */
-    transition: opacity 2s ease, transform 2s ease; /* Smooth transition */
+    transition: opacity 1.85s ease, transform 1.85s ease; /* Smooth transition */
 }
 /* Class to show sections */
 .section.visible {
