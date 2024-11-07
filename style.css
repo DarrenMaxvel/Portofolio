@@ -98,6 +98,85 @@ body{
 .card-12:hover .servicesIcon {
     color: #008000;
 }
+/* Adding margin below "Hard Skills" heading */
+.text-center {
+    margin-bottom: 15px; /* Adjust as needed for spacing */
+}
+
+/* Adding margin above "Soft Skills" heading */
+h3.text-center.soft-skills-heading {
+    margin-top: 30px; /* Adjust for desired padding */
+    margin-bottom: 15px; /* To keep space below this heading too */
+}
+/* Base style for skill cards */
+.skill-card {
+    transition: background 0.5s ease; /* Smooth transition for background change */
+    background-color: #ffffff; /* Default background color */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Image overlay style on hover */
+.skill-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0; /* Initial opacity */
+    transition: opacity 0.5s ease; /* Smooth transition for opacity */
+    z-index: 1;
+}
+
+/* Content should remain above the overlay */
+.skill-card > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* Route Planning card background on hover */
+.skill-card.skill-route-planning:hover::before {
+    background-image: url('images/Navigation.png'); /* Replace with actual image path */
+    opacity: 0.6; /* Adjust opacity for desired effect */
+}
+
+/* Cargo Management card background on hover */
+.skill-card.skill-cargo-management:hover::before {
+    background-image: url('images/Container.png'); /* Replace with actual image path */
+    opacity: 0.6;
+}
+
+/* Add similar styles for other skill cards with different images */
+.skill-card.skill-emergency-drill:hover::before {
+    background-image: url('images/Emergency.png');
+    opacity: 0.6;
+}
+
+.skill-card.skill-communication-skills:hover::before {
+    background-image: url('images/Communication.png');
+    opacity: 0.6;
+}
+
+/* Other cards with specific images */
+.skill-card.skill-leadership:hover::before {
+    background-image: url('images/Leadership.png');
+    opacity: 0.6;
+}
+
+.skill-card.skill-teamwork:hover::before {
+    background-image: url('images/teamwork.png');
+    opacity: 0.6;
+}
+.card-12 {
+    border: 2px solid #ddd; /* Light gray border around the card */
+    padding: 20px; /* Space inside the card */
+    border-radius: 4px; /* Optional: slightly rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for depth */
+    background-color: #fff; /* Optional: white background for clarity */
+}
 .servicesText:hover {
     border: 1px solid #008000;
 }
@@ -133,7 +212,7 @@ body{
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
 /* Fade In Active State */
