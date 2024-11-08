@@ -7,61 +7,48 @@ html {
 body{
     margin: 0;
 }
-
-/* display background color black on navbar scroll */
-.navbarScroll.navbarDark {
-    background-color: black;
-}
-.navbar {
-    /* Default styles for the navbar */
-    background-color: transparent;
-    color: #000;
-    transition: background-color 0.25s ease-in-out; /* Add transition effect */
-  }
-  
-  .navbar.colored {
-    /* Styles for the colored navbar */
-    background-color: #5f5757;
-    color: #fff;
-  }
-  
-  .navbar-nav .nav-link {
-    /* Default styles for navigation links */
-    color: #000;
-  }
-  
-  .navbar-nav .nav-link.active {
-    /* Styles for active navigation links */
-    font-weight: bold;
-  }
-/* hero background image */
-/* hero background image */
 .bgimage {
-    height: 100vh;
-    background: url('images/city-8450817.jpg') no-repeat center center;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-    overflow: hidden; /* Prevents hero-text from moving outside bgimage */
+	height: 100vh;
+	background: url('images/city-8450817.jpg') no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	overflow: hidden;
+	/* Prevents hero-text from moving outside bgimage */
 }
+.navbarScroll.navbarDark {
+	background-color: black;
+}
+
+.navbar {
+	/* Default styles for the navbar */
+	background-color: transparent;
+	color: #000;
+	transition: background-color 0.25s ease-in-out;
+	/* Add transition effect */
+}
+
+.navbar.colored {
+	/* Styles for the colored navbar */
+	background-color: #5f5757;
+	color: #fff;
+}
+
+.navbar-nav .nav-link {
+	/* Default styles for navigation links */
+	color: #000;
+}
+
+.navbar-nav .nav-link.active {
+	/* Styles for active navigation links */
+	font-weight: bold;
+}
+/* display background color black on navbar scroll */
+/* hero background image */
+/* hero background image */
+
 /* text css above hero image*/
-.hero_title {
-    font-size: 4.5rem;
-}
-.hero_desc {
-    font-size: 2rem;
-}
-/* CSS for smooth transition and centered positioning */
-.hero-text {
-    text-align: center;
-    position: absolute; /* Set to absolute to stay within the bgimage section */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Centers it in the bgimage */
-    color: white;
-    transition: transform 0.2s ease-out; /* Smooth transition */
-    pointer-events: none;
-}
+
 #about, #journey {
     margin-top: 4rem;
     padding-top: 4rem;
@@ -70,23 +57,14 @@ body{
     margin-top: 6rem;
     padding-top: 6rem;
 }
-.pemisah{
-    margin-top: 4rem;
-    padding-top: 4rem;
-}
 #contact {
     padding-bottom: 4rem;
 }
 /* about section image css */
+/* services section css */
 .imageAboutPage {
     width: 100%;
 }
-
-/* services section css */
-.servicesText.card-12 {
-    height: 280px;
-    cursor: pointer;
-  }
 .servicesIcon {
     font-size: 36px;
     text-align: center;
